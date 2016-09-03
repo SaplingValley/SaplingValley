@@ -15,6 +15,23 @@
     <!-- Bootstrap core CSS -->
     <link href="css/app.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-82442066-1', 'auto');
+        ga('require', 'linkid');
+        ga('send', 'pageview');
+    </script>
 </head>
 
 <body>
@@ -28,16 +45,16 @@
                 <div class="nav-menu text-center">
                     <ul class="nav navbar-nav navbar-right text-center">
                         <li class="menu-item">
-                            <a class="nav-link" href="#benefits">Benefits <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#benefits"  id="nav-benefits">Benefits <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="menu-item">
-                            <a class="nav-link" href="#inspiration">Inspiration</a>
+                            <a class="nav-link" href="#inspiration" id="nav-inspiration">Inspiration</a>
                         </li>
                         <li class="menu-item">
-                            <a class="nav-link" href="#tutorials">Tutorials</a>
+                            <a class="nav-link" href="#tutorials" id="nav-tutorials">Tutorials</a>
                         </li>
                         <li class="menu-item">
-                            <a class="nav-link" href="#support">Support</a>
+                            <a class="nav-link" href="#support" id="nav-support">Support</a>
                         </li>
                     </ul>
                 </div>
@@ -113,7 +130,7 @@
 
         <div class="row" style="background-color: #FFF; padding-top: 3rem; padding-bottom: 3rem;">
             <div class="col-xs-12 text-center">
-                <a href="https://marketplace.atlassian.com/plugins/com.sapling.elevator/server/overview?utm_source=microsite&utm_medium=marketplacebutton&utm_campaign=microsite" class="btn btn-primary btn-lg" style="background-color:#0A64BD">View on the Atlassian Marketplace</a>
+                <a href="https://marketplace.atlassian.com/plugins/com.sapling.elevator/server/overview?utm_source=microsite&utm_medium=marketplacebutton&utm_campaign=microsite" id="marketplacebutton" class="btn btn-primary btn-lg" style="background-color:#0A64BD">View on the Atlassian Marketplace</a>
             </div>
         </div>
     </div>
@@ -148,7 +165,7 @@
                         Our days, like yours are busy enough, we have no time to chase issues and drive accountability for the people responsible to action them.
                     </p>
                     <p>
-                        Go on, <a href="https://marketplace.atlassian.com/plugins/com.sapling.elevator/server/overview?utm_source=microsite&utm_medium=trylink&utm_campaign=microsite">visit the marketplace</a>, install a trial and give it a try. It may just change your life.
+                        Go on, <a href="https://marketplace.atlassian.com/plugins/com.sapling.elevator/server/overview?utm_source=microsite&utm_medium=trylink&utm_campaign=microsite" id="trylink">visit the marketplace</a>, install a trial and give it a try. It may just change your life.
                     </p>
                 </div>
             </div>
@@ -165,12 +182,12 @@
                     <h2 class="featurette-heading">Tutorials. <span class="text-muted">Make the most of Elevator.</span></h2>
                     <p class="lead">Learn how to set up and use Elevator for JIRA
                         <ul>
-                            <li><a href="https://saplingvalley.atlassian.net/wiki/display/EL/The+Basics">Basic concepts of Elevator for Jira</a></li>
-                            <li><a href="https://saplingvalley.atlassian.net/wiki/display/EL/Understanding+the+Escalation+process">Learn about the escalation workflow</a></li>
-                            <li><a href="https://saplingvalley.atlassian.net/wiki/display/EL/Setting+up+a+roster">Configure a Roster</a></li>
-                            <li><a href="https://saplingvalley.atlassian.net/wiki/display/EL/Setting+up+HipChat+integration">Set up HipChat integration</a></li>
-                            <li><a href="https://saplingvalley.atlassian.net/wiki/display/EL/Setting+up+automation+though+JIRA+Workflow">Automate with custom JIRA workflows</a></li>
-                            <li><a href="https://saplingvalley.atlassian.net/wiki/pages/viewpage.action?pageId=12517595">Integrate with JIRA Service Desk</a></li>
+                            <li><a href="https://saplingvalley.atlassian.net/wiki/display/EL/The+Basics" id="tutorials-basics">Basic concepts of Elevator for Jira</a></li>
+                            <li><a href="https://saplingvalley.atlassian.net/wiki/display/EL/Understanding+the+Escalation+process"  id="tutorials-workflow">Learn about the escalation workflow</a></li>
+                            <li><a href="https://saplingvalley.atlassian.net/wiki/display/EL/Setting+up+a+roster"  id="tutorials-configure">Configure a Roster</a></li>
+                            <li><a href="https://saplingvalley.atlassian.net/wiki/display/EL/Setting+up+HipChat+integration" id="tutorials-hipchat">Set up HipChat integration</a></li>
+                            <li><a href="https://saplingvalley.atlassian.net/wiki/display/EL/Setting+up+automation+though+JIRA+Workflow" id="tutorials-workflows">Automate with custom JIRA workflows</a></li>
+                            <li><a href="https://saplingvalley.atlassian.net/wiki/pages/viewpage.action?pageId=12517595" id="tutorials-servicedesk">Integrate with JIRA Service Desk</a></li>
                         </ul>
                     </p>
                 </div>
@@ -184,9 +201,9 @@
                     <h2 class="featurette-heading">Support. <span class="text-muted">We're here to help.</span></h2>
                     <p class="lead">Need some assistance?
                         <ul>
-                            <li><a href="https://saplingvalley.atlassian.net/wiki/spaces/EL">Check out the documentation</a></li>
-                            <li>Raise a support request <a href="https://support.zoho.com/portal/saplingvalley/newticket">here</a></li>
-                            <li>Contact us at <a href="mailto:support@saplingvalley.com">support@saplingvalley.com</a></li>
+                            <li><a href="https://saplingvalley.atlassian.net/wiki/spaces/EL" id="documentation">Check out the documentation</a></li>
+                            <li>Raise a support request <a href="https://support.zoho.com/portal/saplingvalley/newticket"  id="support-request">here</a></li>
+                            <li>Contact us at <a href="mailto:support@saplingvalley.com" id="mail-support">support@saplingvalley.com</a></li>
                         </ul>
                     </p>
                 </div>
@@ -205,10 +222,10 @@
                     <a id="tutorials"></a>
                     <h2 class="featurette-heading">Roadmap. <span class="text-muted">Help us make Elevator for JIRA great.</span></h2>
                     <p class="lead">
-                        We've got a lot of exciting things planned for the future. Watch us on the <a class="" href="https://marketplace.atlassian.com/plugins/com.sapling.elevator/server/overview?utm_source=microsite&utm_medium=roadmaplink&utm_campaign=microsite">Atlassian Marketplace</a> for version updates, or <a href="http://eepurl.com/cbERWD">sign up to our email list</a>
+                        We've got a lot of exciting things planned for the future. Watch us on the <a class="" href="https://marketplace.atlassian.com/plugins/com.sapling.elevator/server/overview?utm_source=microsite&utm_medium=roadmaplink&utm_campaign=microsite" id="roadmaplink">Atlassian Marketplace</a> for version updates, or <a href="http://eepurl.com/cbERWD"  id="mailing-list">sign up to our email list</a>
                     </p>
                     <p class="lead">
-                        If you've got a great idea for Elevator for JIRA we'd love to hear about it. Get in touch with us at <a href="mailto:info@saplingvalley.com">info@saplingvalley.com</a>.
+                        If you've got a great idea for Elevator for JIRA we'd love to hear about it. Get in touch with us at <a href="mailto:info@saplingvalley.com"  id="feedback-email">info@saplingvalley.com</a>.
                     </p>
                 </div>
             </div>
@@ -218,7 +235,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <footer>
-                    <p>&copy; 2016 Sapling Valley ABN 18 832 183 112 &middot; <a href="/eula.html">Product License Agreement</a></p>
+                    <p>&copy; 2016 Sapling Valley ABN 18 832 183 112 &middot; <a href="/eula.html" id="eula">Product License Agreement</a></p>
                 </footer>
             </div>
 
@@ -227,22 +244,6 @@
     </div>
     <!-- /.container -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-82442066-1', 'auto');
-        ga('send', 'pageview');
-    </script>
     <script type="text/javascript">
         $(".menu-item a[href^='#']").on('click', function(e) {
             // prevent default anchor click behavior
