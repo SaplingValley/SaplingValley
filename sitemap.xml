@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.84">
+
+<url>
+<loc>http://elevatorforjira.com/</loc>
+<lastmod>2016-10-26</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1.0</priority>
+</url>
+
+<url>
+<loc>http://elevatorforjira.com/eula.html</loc>
+<lastmod>2016-10-26</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.0</priority>
+</url>
+
+</urlset>
