@@ -12,7 +12,7 @@
     <link rel="canonical" href="http://www.elevatorforJIRA.com" />
 
 
-    <title>Elevator for JIRA - Issue Escalation, On-call Rosters and Automatic Issue Assignment</title>
+    <title>Elevator for JIRA - Smart Issue Assignment for Teams: Escalation, On-call Rosters and Automatic Workload Management</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/app.css" rel="stylesheet">
@@ -37,214 +37,135 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-light navbar-toggleable flex-column align-items-end" style="position:absolute; right: 0px; top: 1rem">
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-3 col-sm-12 text-center">
-                <h1><img class="" src="elevator-logo.png" style="max-height: 75px; margin-top: 1rem; margin-bottom: 1rem;" alt="Elevator for JIRA: JIRA Escalation and On-call Rosters" /></h1>
-
-            </div>
-            <div class="col-lg-6 col-sm-12 nav-container">
-                <div class="nav-menu text-center">
-                    <ul class="nav navbar-nav navbar-right text-center">
-                        <li class="menu-item">
-                            <a class="nav-link" href="#benefits"  id="nav-benefits">Benefits <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="nav-link" href="#inspiration" id="nav-inspiration">Inspiration</a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="nav-link" href="#tutorials" id="nav-tutorials">Tutorials</a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="nav-link" href="#support" id="nav-support">Support</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- <div class="col-lg-3 col-sm-12 nav-container">
-                <div class="nav-menu ">
-                    <ul class="nav navbar-nav navbar-right text-right">
-                        <li class="nav-item" style="padding-top: 0.3rem">
-                            <a class="nav-link" href="https://marketplace.atlassian.com/plugins/com.sapling.elevator/server/overview" style="font-size:16px;">View on the Atlassian Marketplace</a>
-                        </li>
-                    </ul>
-                </div>
-            </div> -->
-        </div>
-    </div>
-    <div class="banner-image">
-        <div class="banner-caption">
-            <h2 class="text-center">Delivering issues into the right hands, first time!</h2>
-        </div>
-    </div>
+            <ul class="navbar-nav d-flex flex-column align-items-end ">
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://saplingvalley.atlassian.net/wiki/spaces/EFJD2/overview">Documentation </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://saplingvalley.atlassian.net/servicedesk/customer/portal/1">Support</a>
+                </li>
+            </ul>
+    </nav>
 
     <div class="container">
-        <div class="row featurette">
-            <div class="col-sm-12 col-lg-8 push-lg-2 text-center">
-                <p class="lead " style="padding-top: 2rem; padding-bottom: 1rem">
-                    Use Elevator for JIRA's on call rosters and intelligent escalation capabilities to lift your issue management game.
-                </p>
+        <div class="header text-center" style="margin-bottom: 3rem">
+            <div class="row" style="margin-top: 2rem">
+                <div class="col text-center">
+                    <img src="Elevator_FA-CentredWithTag_RGB.png" alt="Elevator for JIRA" class="img-responsive" style="max-width: 250px">
+                </div>
+            </div>
+            <div class="row"style="margin-top: 3rem">
+                <div class="col">
+                    <h1>Smart Issue Assignment for Teams</h1>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 2rem">
+                <div class="col">
+                    <p class="lead">On-Call Rosters &amp; Issue Escalation</p>
+                    <p class="lead">Intelligent Work Distribution</p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 2rem">
+                <div class="col">
+                    <a class="btn btn-primary btn-lg" href="https://marketplace.atlassian.com/plugins/com.sapling.elevator/server/overview" role="button">Download Now</a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container-fluid grey-bg">
-        <div class="marketing">
+        <div class="row marketing">
             <div class="row">
-                <a id="benefits"></a>
-                <div class="col-md-3 marketing-item">
-                    <span class="fa-stack fa-4x">
-                      <i class="fa fa-circle fa-stack-2x icon-background"></i>
-                      <i class="fa fa-clock-o fa-stack-1x" style="color:#0A64BD;"></i>
-                    </span>
-                    <h3>Fast Setup</h3>
-                    <p>In 3 steps you can start elevating your issues</p>
-                </div>
-                <div class="col-md-3 marketing-item">
-                    <span class="fa-stack fa-4x">
-                      <i class="fa fa-circle fa-stack-2x icon-background"></i>
-                      <i class="fa fa-users fa-stack-1x" style="color:#12B052;"></i>
-                    </span>
-                    <h3>Accountability</h3>
-                    <p>Create flexible rosters to put your team on call.
-                        <br /> Ensure your issues can always be escalated to the right person</p>
-                </div>
-                <div class="col-md-3 marketing-item">
-                    <span class="fa-stack fa-4x">
-                      <i class="fa fa-circle fa-stack-2x icon-background"></i>
-                      <i class="fa fa-eye fa-stack-1x" style="color:#E36E2E;"></i>
-                    </span>
-                    <h3>Visibility</h3>
-                    <p>Notifications from acknowlegment to resolution.</p>
-                    <p>Push alerts to the oncall using the power of Atlassian HipChat</p>
-                </div>
-                <div class="col-md-3 marketing-item">
-                    <span class="fa-stack fa-4x">
-                      <i class="fa fa-circle fa-stack-2x icon-background"></i>
-                      <i class="fa fa-graduation-cap fa-stack-1x" style="color: #128BB0;"></i>
-                    </span>
-                    <h3>JIRA Geek Friendly</h3>
-                    <p>Automate Elevator with your custom JIRA workflows</p>
+                <div class="col">
+                    <h2>On-Call Rosters &amp; Issue Escalation</h2>
                 </div>
             </div>
-
-        </div>
-
-        <div class="row" style="background-color: #FFF; padding-top: 3rem; padding-bottom: 3rem;">
-            <div class="col-xs-12 text-center">
-                <a href="https://marketplace.atlassian.com/plugins/com.sapling.elevator/server/overview?utm_source=microsite&utm_medium=marketplacebutton&utm_campaign=microsite" id="marketplacebutton" class="btn btn-primary btn-lg" style="background-color:#0A64BD">View on the Atlassian Marketplace</a>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid grey-bg">
-        <div class="container">
-            <div class="row featurette" style="padding-top: 2rem">
-                <a id="inspiration"></a>
-                <div class="col-md-6">
-                    <h2 class="featurette-heading">Inspiration. <span class="text-muted"></span></h2>
-                    <p class="lead">
-                        I think Vanilla Ice said it best “If there was a problem, yo, I’ll solve it”. Although we cannot express with such lyrical wizardry, the words do strike at the core of what we have set out to achieve for all who have ever raised a JIRA issue.
-                    </p>
-                    <p>
-                        The 3 of us have worked together for over 10 years. We manage different teams across development and support which are interconnected and dependent on each other to get our work done.
-                    </p>
-                    <p>
-                        JIRA has always been there with us, and plays an integral part. But there was always something missing.
-                    </p>
-                    <p>
-                        Elevator for JIRA was born because we had the same challenge you do. Knowing who you should assign an issue to. Getting issues to the right people in your business the first time and ensuring everyone is on the same page.
-                    </p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <ul>
+                        <li>Respond to incidents quickly, communicate effectively.</li>
+                        <li>Create flexible on-call rosters, ensure your issues can always be escalated to the right person.
+                        <li>Tiered on-call rosters with automated re-escalation ensures incidents are never missed</li>
+                        <li>Configure team shifts for complex on call schedules across the globe</li>
+                    </ul>
                 </div>
-                <div class="col-md-6" style="padding-top:5.5rem;">
-                    <p>
-                        For us it was the support on-call person, the on-call development 3rd level support or the Project Manager on a project and so on.
-                    </p>
-                    <p>
-                        We knew a JIRA escalation and on-call plugin would that sent issues to the right people and alerted them immediately would increase efficiency, get issues resolved faster and make us all look good.
-                    </p>
-                    <p>
-                        Our days, like yours are busy enough, we have no time to chase issues and drive accountability for the people responsible to action them.
-                    </p>
-                    <p>
-                        Go on, <a href="https://marketplace.atlassian.com/plugins/com.sapling.elevator/server/overview?utm_source=microsite&utm_medium=trylink&utm_campaign=microsite" id="trylink">visit the marketplace</a>, install a trial and give it a try. It may just change your life.
-                    </p>
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-5">
-                    <i class="fa fa-book fa-6" aria-hidden="true"></i>
-                </div>
-                <div class="col-md-7">
-                    <a id="tutorials"></a>
-                    <h2 class="featurette-heading">Tutorials. <span class="text-muted">Make the most of Elevator.</span></h2>
-                    <p class="lead">Learn how to set up and use Elevator for JIRA
-                        <ul>
-                            <li><a href="https://saplingvalley.atlassian.net/wiki/display/EL/The+Basics" id="tutorials-basics">Basic concepts of Elevator for JIRA</a></li>
-                            <li><a href="https://saplingvalley.atlassian.net/wiki/display/EL/Understanding+the+Escalation+process"  id="tutorials-workflow">Learn about the escalation workflow</a></li>
-                            <li><a href="https://saplingvalley.atlassian.net/wiki/display/EL/Setting+up+a+roster"  id="tutorials-configure">Configure a Roster</a></li>
-                            <li><a href="https://saplingvalley.atlassian.net/wiki/display/EL/Setting+up+HipChat+integration" id="tutorials-hipchat">Set up HipChat integration</a></li>
-                            <li><a href="https://saplingvalley.atlassian.net/wiki/display/EL/Setting+up+automation+though+JIRA+Workflow" id="tutorials-workflows">Automate with custom JIRA workflows</a></li>
-                            <li><a href="https://saplingvalley.atlassian.net/wiki/pages/viewpage.action?pageId=12517595" id="tutorials-servicedesk">Integrate with JIRA Service Desk</a></li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <a id="support"></a>
-                    <h2 class="featurette-heading">Support. <span class="text-muted">We're here to help.</span></h2>
-                    <p class="lead">Need some assistance?
-                        <ul>
-                            <li><a href="https://saplingvalley.atlassian.net/wiki/spaces/EL" id="documentation">Check out the documentation</a></li>
-                            <li>Raise a support request <a href="https://support.zoho.com/portal/saplingvalley/newticket"  id="support-request">here</a></li>
-                            <li>Contact us at <a href="mailto:support@saplingvalley.com" id="mail-support">support@saplingvalley.com</a></li>
-                        </ul>
-                    </p>
-                </div>
-                <div class="col-md-5 text-right">
-                    <i class="fa fa-question-circle fa-6" aria-hidden="true"></i>
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-5">
-                    <i class="fa fa-lightbulb-o fa-6" aria-hidden="true"></i>
-                </div>
-                <div class="col-md-7">
-                    <a id="tutorials"></a>
-                    <h2 class="featurette-heading">Roadmap. <span class="text-muted">Help us make Elevator for JIRA great.</span></h2>
-                    <p class="lead">
-                        We've got a lot of exciting things planned for the future. Watch us on the <a class="" href="https://marketplace.atlassian.com/plugins/com.sapling.elevator/server/overview?utm_source=microsite&utm_medium=roadmaplink&utm_campaign=microsite" id="roadmaplink">Atlassian Marketplace</a> for version updates, or <a href="http://eepurl.com/cbERWD"  id="mailing-list">sign up to our email list</a>
-                    </p>
-                    <p class="lead">
-                        If you've got a great idea for Elevator for JIRA we'd love to hear about it. Get in touch with us at <a href="mailto:info@saplingvalley.com"  id="feedback-email">info@saplingvalley.com</a>.
-                    </p>
+                <div class="col-sm-6">
+                    <iframe src="https://www.youtube.com/embed/pk2BrNaOzgE" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-12">
-                <footer>
-                    <p>&copy; 2016 Sapling Valley ABN 18 832 183 112 &middot; <a href="/eula.html" id="eula">Product License Agreement</a></p>
-                </footer>
-            </div>
 
+        <div class="row marketing">
+            <div class="row">
+                <div class="col">
+                    <h2>Intelligent Work Assignment for Service Teams</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <ul>
+                        <li>Increase the efficiency and automatically optimise the workload for your service teams.</li>
+                        <li>Evenly distribute work, or target work to a subset of the team. Elevator for JIRA will automatically assign issues to the correct team member.</li>
+                        <li>Seamlessly transition across support teams working in multiple timezones.</li>
+                        <li>Automatically reassign unacknowledged issues with a configurable timeout.</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <iframe  src="https://www.youtube.com/embed/EbEp3Uescbw" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
 
+        <div class="row marketing">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>Notifications</h2>
+                    <ul>
+                        <li>Everyone involved is notified of updates immediately via email, Atlassian HipChat, Slack and webhooks.</li>
+                        <li>Users can configure their own individual notification settings, and action events from within their notifications</li>
+                        <li>Notify teams with messages to group rooms and channels</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <img class="img-fluid" src="notifications.png" alt="Hipchat, Slack, email and webhooks">
+                </div>
+            </div>
+        </div>
+
+        <div class="row marketing">
+            <div class="row">
+                <div class="col">
+                    <h2>Automate Your Service Management</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <ul>
+                        <li>Integrate Elevator for JIRA with JIRA Service Desk Automation. Create custom rules to automatically escalate high severity incidents, or auto-assign incoming service requests for your helpdesk
+                        <li>Incorporate Elevator for JIRA into your own custom workflows with our JIRA workflow actions
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <img class="img-fluid" src="automation.png" alt="JIRA Service Desk Automation">
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 1rem;margin-bottom: 2rem">
+            <div class="col text-center">
+                <a class="btn btn-primary btn-lg" href="https://marketplace.atlassian.com/plugins/com.sapling.elevator/server/overview" role="button">View on the Atlassian Marketplace</a>
+            </div>
+        </div>
+
+        <footer class="footer text-center">
+            <p>&copy; 2016 Sapling Valley ABN 18 832 183 112 &middot; <a href="/eula.html" id="eula">Product License Agreement</a></p>
+        </footer>
     </div>
     <!-- /.container -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
     <script type="text/javascript">
         $(".menu-item a[href^='#']").on('click', function(e) {
             // prevent default anchor click behavior
